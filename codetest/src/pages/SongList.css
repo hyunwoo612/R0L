@@ -1,0 +1,106 @@
+.SongListContainer {
+    padding: 20px;
+  }
+  
+  .searchBar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .searchBar input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .searchBar input:focus {
+    border-color: #007bff;
+  }
+  
+  .songList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .songList ul li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f8f9fa;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .songList ul li:hover {
+    background-color: #e9ecef;
+  }
+  
+  .noSongs {
+    text-align: center;
+  }
+  
+  .noSongs p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .noSongs button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #B1EAFF;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .noSongs button:hover {
+    font-weight: bold;
+  }
+  
+  .addMore {
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+  }
+  
+  .addMore p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .addMore button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #B1EAFF;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .addMore button:hover {
+    font-weight: bold;
+  }
+  
+  .audioPlayer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .audioPlayer p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  audio {
+    width: 100%;
+    max-width: 600px;
+    outline: none;
+  }
