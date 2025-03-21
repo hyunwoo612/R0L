@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Header {
+    background-color: #0049F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.Header .ilog {
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.Header .icon img {
+    height: 64px;
+    width: 64px;
+}
+
+.Header .logo {
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.Header .SL {
+    display: flex;
+    gap: 70px;
+    margin-right: 50px;
+    font-size: 24px;
+}
+
+.Header .Sign, .Header .Login  {
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+.Header .Sign.active, .Header .Login.active {
+    font-weight: 900;
+    color: #000000;
+}
+
+.Header .logo:hover {
+    color: #000000;
+}
+
+.Header .Sign:hover, .Header .Login:hover {
+    font-weight: bold;
+    color: #000000;
+}
+
+.Header .Logout {
+    cursor: pointer;
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .Header .Logout:hover {
+    color: #cc0000;
+  }
+  
+  @media screen and (max-width:1px){
+    .Header{
+        width:1px;
+    }
+}
