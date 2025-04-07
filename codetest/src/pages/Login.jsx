@@ -38,51 +38,52 @@ const Login = ({ setLoggedInUser }) => {
   };
 
   return (
-    <div className={styles.Login}>
-      <div className={styles.title}>로그인</div>
-      <form onSubmit={handleSubmit}>
-        <div className={styles.inputlogin}>
-          <input
-            type="text"
-            name="username"
-            placeholder="아이디"
-            value={formData.username}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className={styles.inputlogin}>
-          <input
-            type="password"
-            name="password"
-            placeholder="비밀번호"
-            value={formData.password}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <button type="submit" className={styles.loginButton}>
-          로그인
-        </button>
-        <div className={styles.whatsign}>
-          <div className={styles.what}>
-          아직 회원이 아니신가요?
+      <div className={styles.Login}>
+        <div className={styles.top}></div>
+          <div className={styles.title}>로그인</div>
+            <form onSubmit={handleSubmit}>
+          <div className={styles.inputlogin}>
+            <input
+              type="text"
+              name="username"
+              placeholder="아이디"
+              value={formData.username}
+              onChange={handleChange}
+              required
+            />
           </div>
-          <div className={styles.signnow}
-          onClick={() => navigate('/Sign')}>
-           회원가입
-        </div>
-        </div>
-        <div className={styles.github}>
-          <img src={git} alt='1'/>
-          <div>GitHub로 로그인하기</div>
-        </div>
-        <div className={styles.google}>
-          <img src={google} alt='1'/>
-          <div>Google로 로그인하기</div>
-        </div>
-      </form>
-    </div>
+          <div className={styles.inputlogin}>
+            <input
+              type="password"
+              name="password"
+              placeholder="비밀번호"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <button type="submit" className={styles.loginButton}>
+            로그인
+          </button>
+          <div className={styles.whatsign}>
+            <div className={styles.what}>
+            아직 회원이 아니신가요?
+            </div>
+            <div className={styles.signnow}
+            onClick={() => navigate('/Sign')}>
+            회원가입
+          </div>
+          </div>
+          <div className={styles.github}>
+            <img src={git} alt='1'/>
+            <div>GitHub로 로그인하기</div>
+          </div>
+          <div className={styles.google}>
+            <img src={google} alt='1'/>
+            <div>Google로 로그인하기</div>
+            </div>
+          </form>
+      </div>
   );
 };
 

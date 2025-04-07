@@ -53,6 +53,7 @@ const Sign = () => {
   
   return (
     <div className={styles.Sign}>
+      <div className={styles.top}></div>
       <div className={styles.title}>회원가입</div>
       <form onSubmit={handleSubmit}>
         <div className={styles.inputsign}>
